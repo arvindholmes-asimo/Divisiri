@@ -9,44 +9,42 @@
 const DIVISIRI_NAV_LINKS = [
   { label: "About Us", href: "about.html" },
   { label: "Solutions", href: "solutions.html" },
-  { label: "R&D", href: "research-development.html" },
   { label: "Products", href: "products.html" },
-  { label: "Concept to Consumer", href: "concept-to-consumer.html" },
+  { label: "Institutional Sales", href: "institutional.html" },
   { label: "Private Label", href: "private-label.html" },
-  { label: "Co-Branding", href: "co-branding.html" },
   { label: "Journal", href: "journal.html" },
   { label: "Contact", href: "contact.html" },
 ];
 
-/* Four core engagement models, shown as an interactive tab strip on the homepage */
+/* Four ways Divisiri works, shown as an interactive tab strip on the homepage */
 const DIVISIRI_PILLARS = [
   {
-    label: "Concept to Consumer",
-    heading: "Concept to Consumer",
-    body: "We help take a promising wellness idea from early concept through formulation, quality review, and market readiness — one connected process rather than disconnected handoffs.",
-    cta: "See the journey",
-    href: "concept-to-consumer.html",
+    label: "Own Brands",
+    heading: "Own Brands",
+    body: "Health and wellness products sold directly under the Divisiri name, across medical nutrition and Ayur / Nutri cosmetics.",
+    cta: "Explore our products",
+    href: "products.html",
   },
   {
     label: "Private Label",
     heading: "Private Label",
-    body: "Bring your own brand to market on a Divisiri-developed formulation. We work through product concept, packaging direction, and technical documentation with you.",
+    body: "Your brand, our products. We develop and supply wellness and nutrition products under your own label, with packaging and label coordination.",
     cta: "Discuss private label",
     href: "private-label.html",
   },
   {
-    label: "Co-Branding",
-    heading: "Co-Branding",
-    body: "Shared product development for brands that want to co-create — from positioning and packaging planning through to launch collaboration.",
-    cta: "Explore co-branding",
-    href: "co-branding.html",
+    label: "Institutional Sales",
+    heading: "Institutional & Hospital Sales",
+    body: "Supply of medical nutrition and healthcare products to hospitals and institutions, with dependable volumes and documentation.",
+    cta: "Institutional enquiries",
+    href: "institutional.html",
   },
   {
-    label: "Research & Development",
-    heading: "Research & Development",
-    body: "Ingredient exploration, formulation strategy, prototyping, and stability planning — the technical foundation behind every Divisiri solution area.",
-    cta: "See our R&D approach",
-    href: "research-development.html",
+    label: "Direct Supply",
+    heading: "Direct Supply of Healthcare Products",
+    body: "Direct supply of healthcare products so patients can access them at affordable prices.",
+    cta: "Get in touch",
+    href: "contact.html",
   },
 ];
 
@@ -64,11 +62,9 @@ const DIVISIRI_FOOTER_GROUPS = [
     heading: "Solutions",
     links: [
       { label: "Solutions", href: "solutions.html" },
-      { label: "R&D", href: "research-development.html" },
       { label: "Products", href: "products.html" },
-      { label: "Concept to Consumer", href: "concept-to-consumer.html" },
+      { label: "Institutional Sales", href: "institutional.html" },
       { label: "Private Label", href: "private-label.html" },
-      { label: "Co-Branding", href: "co-branding.html" },
       { label: "Quality & Safety", href: "quality-safety.html" },
     ],
   },
@@ -97,72 +93,62 @@ const DIVISIRI_FAQS = [
   {
     question: "What is Divisiri?",
     answer:
-      "Divisiri is an independent wellness and innovation company that develops nutrition, nutraceutical, personal-care, and product-development solutions for everyday life.",
+      "Divisiri is a wellness brand offering a comprehensive, holistic approach to human well-being through the science of wellness. We sell our own-brand health products, develop private-label products, and supply healthcare products to institutions and hospitals.",
   },
   {
-    question: "What types of wellness solutions does Divisiri develop?",
+    question: "What products does Divisiri offer?",
     answer:
-      "Divisiri works across medical nutrition, wellness nutrition, nutraceuticals, Ayurvedic-inspired wellness, cosmeceuticals and personal care, and functional food concepts. See our Solutions page for details on each area.",
+      "Our products fall into two categories: Medical Nutrition (including disease-oriented nutrition such as cancer and diabetes support, and lifestyle nutrition for joint health, weight management, stress and anxiety, and sleep) and Ayur / Nutri Cosmetics (natural cosmetics for hair, skin and nails, and edible cosmetics).",
   },
   {
-    question: "Does Divisiri sell finished products?",
+    question: "Are Divisiri products made with natural ingredients?",
     answer:
-      "Divisiri's product catalogue currently shows placeholder examples of the kinds of products we work on. Availability of any finished product depends on verification, review, and market readiness.",
+      "Our Ayur / Nutri Cosmetics are formulated with 100% natural ingredients. Ingredient lists and product details are shown on each product page.",
   },
   {
-    question: "Does Divisiri provide product-development services?",
+    question: "Are Divisiri products certified?",
     answer:
-      "Yes. Product development — from concept exploration through formulation, review, and market preparation — is a core part of what Divisiri does. Visit our Research & Development page to learn more.",
+      "Our cosmetic products are certified cosmetics. Certificates and supporting documentation are available on request.",
   },
   {
-    question: "What is concept-to-consumer development?",
+    question: "Can I buy Divisiri products directly?",
     answer:
-      "Concept-to-consumer development is Divisiri's approach to taking a promising idea through positioning, formulation, packaging, technical review, and launch support. See the Concept to Consumer page for the full journey.",
+      "Yes. We sell our own-brand products directly and supply healthcare products at affordable prices. Contact us to place an order or ask about availability in your area.",
   },
   {
-    question: "What is private-label development?",
+    question: "Do you supply hospitals and institutions?",
     answer:
-      "Private-label development means Divisiri works with a partner brand to develop a product concept, formulation direction, and supporting materials under that partner's own brand. Visit the Private Label page to start an enquiry.",
+      "Yes. Our institutional sales team supplies medical nutrition and healthcare products to hospitals and institutions. Visit the Institutional Sales page or contact us to discuss requirements.",
   },
   {
-    question: "Does Divisiri support co-branding?",
+    question: "Do you offer private-label products?",
     answer:
-      "Yes, Divisiri considers co-branding collaborations on a project-by-project basis, covering shared positioning, packaging, and market-launch planning. See the Co-Branding page for more information.",
+      "Yes. We develop and supply products under your own brand, including product selection, packaging and label coordination. Visit the Private Label page to start an enquiry.",
   },
   {
-    question: "Can Divisiri help with formulation?",
+    question: "Are medical nutrition products a substitute for medical treatment?",
     answer:
-      "Formulation strategy and refinement are part of our research-and-development approach. Specific formulation details, ingredients, and outcomes vary by project and are evaluated individually.",
+      "No. Medical nutrition products are intended to be used under the guidance of a qualified healthcare professional. They are not a substitute for diagnosis, treatment, or medical advice. Please read our Wellness Disclaimer.",
   },
   {
-    question: "How long does product development take?",
+    question: "What is an FSMP or FSDU product?",
     answer:
-      "Timelines vary widely depending on product category, formulation complexity, regulatory pathway, and market. We do not publish fixed timelines because each project is different.",
-  },
-  {
-    question: "Does Divisiri provide regulatory support?",
-    answer:
-      "Divisiri includes regulatory review as a step within its development process, but does not claim any specific certifications, approvals, or regulatory guarantees unless official documentation is provided.",
-  },
-  {
-    question: "What information is needed to start a project?",
-    answer:
-      "Generally we ask about your intended product category, target market, project stage, and general goals. Use the Contact page to share initial details and we will follow up with next steps.",
+      "FSMP (Food for Special Medical Purposes) and FSDU (Food for Special Dietary Uses) are regulated categories of nutrition products. Where a product falls into one of these categories, its use is subject to applicable regulations and professional guidance.",
   },
   {
     question: "Where are Divisiri products available?",
     answer:
-      "Divisiri does not currently publish a verified list of retail availability. Any availability information will be confirmed here once finalized.",
+      "Availability varies by product and region. Contact us to confirm whether a product is available to you.",
   },
   {
-    question: "How can I request a product catalogue?",
+    question: "How can I request a product catalogue or price list?",
     answer:
-      "You can reach out through the Contact page and select a product enquiry to request more information about our current capabilities.",
+      "Use the Contact page and select Product enquiry, or Institutional enquiry if you are a hospital or institution.",
   },
   {
     question: "How can I report a product concern?",
     answer:
-      "Please use the Contact page and select Customer Support to report a product concern. If your question relates to a medication, medical condition, or personal health decision, please consult a qualified healthcare professional rather than relying on website content.",
+      "Please use the Contact page and select Customer support. If your question relates to a medication, medical condition, or personal health decision, please consult a qualified healthcare professional rather than relying on website content.",
   },
 ];
 
@@ -263,92 +249,91 @@ const DIVISIRI_JOURNAL_CATEGORIES = [
   "Industry Insights",
 ];
 
-/* Product catalogue placeholder data, rendered on products.html */
+/* Shared placeholder detail fields applied to every product card */
+const DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER =
+  "To be confirmed — placeholder pending verified product data.";
+
+/* Product catalogue, rendered on products.html */
 const DIVISIRI_PRODUCTS = [
   {
-    id: "daily-nutrition",
-    name: "Divisiri Daily Nutrition",
-    category: "Wellness Nutrition",
+    id: "disease-oriented-nutrition",
+    name: "Disease-Oriented Nutrition",
+    category: "Medical Nutrition",
     overview:
-      "A placeholder concept for an everyday nutrition product intended to support general wellbeing as part of a balanced routine.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
+      "Nutrition products for people managing specific conditions such as cancer and diabetes. Intended for use under the guidance of a qualified healthcare professional.",
+    intendedUse: "Disease-oriented nutritional support, under medical supervision.",
     keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
+      "FSMP / FSDU formats where applicable",
+      "Supplied to patients and to institutions",
     ],
   },
   {
-    id: "botanical-balance",
-    name: "Divisiri Botanical Balance",
-    category: "Ayurvedic-Inspired Wellness",
-    overview:
-      "A placeholder concept exploring traditional botanical ingredients in a contemporary wellness format.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
-    keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
-    ],
+    id: "joint-health",
+    name: "Joint Health",
+    category: "Medical Nutrition",
+    overview: "Lifestyle nutrition to support joint health as part of an everyday routine.",
+    intendedUse: "General lifestyle nutritional support.",
+    keyFeatures: [DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
-    id: "active-support",
-    name: "Divisiri Active Support",
-    category: "Nutraceuticals",
-    overview:
-      "A placeholder concept for a nutraceutical format intended to support active, everyday lifestyles.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
-    keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
-    ],
+    id: "weight-management",
+    name: "Weight Management",
+    category: "Medical Nutrition",
+    overview: "Lifestyle nutrition designed to support healthy weight management alongside diet and activity.",
+    intendedUse: "General lifestyle nutritional support.",
+    keyFeatures: [DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
-    id: "herbal-care",
-    name: "Divisiri Herbal Care",
-    category: "Ayurvedic-Inspired Wellness",
-    overview:
-      "A placeholder concept for a herbal wellness product drawing on traditional plant-based ingredient education.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
-    keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
-    ],
+    id: "stress-anxiety",
+    name: "Stress & Anxiety",
+    category: "Medical Nutrition",
+    overview: "Lifestyle nutrition to support everyday stress and anxiety management.",
+    intendedUse: "General lifestyle nutritional support.",
+    keyFeatures: [DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
-    id: "functional-nutrition",
-    name: "Divisiri Functional Nutrition",
-    category: "Functional Foods",
-    overview:
-      "A placeholder concept for a fortified, ingredient-led food format designed around everyday convenience.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
-    keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
-    ],
+    id: "sleep-support",
+    name: "Sleep",
+    category: "Medical Nutrition",
+    overview: "Lifestyle nutrition to support restful sleep as part of a healthy routine.",
+    intendedUse: "General lifestyle nutritional support.",
+    keyFeatures: [DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
-    id: "skin-wellness",
-    name: "Divisiri Skin Wellness",
-    category: "Cosmeceuticals",
-    overview:
-      "A placeholder concept for a topical wellness product exploring skin-care formulation directions.",
-    intendedUse:
-      "To be confirmed — placeholder pending verified product data.",
-    keyFeatures: [
-      "To be confirmed — placeholder pending verified product data.",
-    ],
+    id: "hair-care",
+    name: "Hair Care",
+    category: "Ayur / Nutri Cosmetics",
+    overview: "Certified cosmetic formulations for hair, made with 100% natural ingredients.",
+    intendedUse: "Daily hair care.",
+    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+  },
+  {
+    id: "skin-care",
+    name: "Skin Care",
+    category: "Ayur / Nutri Cosmetics",
+    overview: "Certified cosmetic formulations for skin, made with 100% natural ingredients.",
+    intendedUse: "Daily skin care.",
+    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+  },
+  {
+    id: "nail-care",
+    name: "Nail Care",
+    category: "Ayur / Nutri Cosmetics",
+    overview: "Certified cosmetic formulations for nails, made with 100% natural ingredients.",
+    intendedUse: "Daily nail care.",
+    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+  },
+  {
+    id: "edible-cosmetics",
+    name: "Edible Cosmetics",
+    category: "Ayur / Nutri Cosmetics",
+    overview: "Edible cosmetic products that bring beauty care from the inside out, made with natural ingredients.",
+    intendedUse: "Consumed as directed on the product label.",
+    keyFeatures: ["Edible format", "100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
 ];
 
 const DIVISIRI_PRODUCT_CATEGORIES = [
   "Medical Nutrition",
-  "Wellness Nutrition",
-  "Nutraceuticals",
-  "Functional Foods",
-  "Ayurvedic-Inspired Wellness",
-  "Cosmeceuticals",
-  "Personal Care",
+  "Ayur / Nutri Cosmetics",
 ];
-
-/* Shared placeholder detail fields applied to every product card */
-const DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER =
-  "To be confirmed — placeholder pending verified product data.";
