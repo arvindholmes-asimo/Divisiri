@@ -800,7 +800,7 @@ body.dv-site {
   max-width: 34ch;
 }
 
-.dv-footer h4 {
+.dv-footer h3 {
   font-size: 13px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1145,7 +1145,7 @@ body.dv-site {
   padding: 72px 0 32px;
 }
 
-.dv-site .footer-col h4 {
+.dv-site .footer-col h3 {
   font-family: var(--dv-heading);
   color: var(--dv-primary);
   font-size: 13px;

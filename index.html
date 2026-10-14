@@ -20,6 +20,7 @@
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/divisiri-system.css" />
+<link rel="stylesheet" href="css/saas.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -63,35 +64,55 @@
 
 <main id="main">
 
-  <section class="dv-hero">
-    <div class="dv-wrap dv-hero__grid">
+  <section class="dv-hero dv-hero--saas">
+    <div class="dv-hero__bg" aria-hidden="true"></div>
+    <div class="dv-wrap">
       <div class="dv-hero__copy">
-        <p class="dv-eyebrow">Medical nutrition &amp; wellness</p>
-        <h1>Holistic care. Healthier life.</h1>
-        <p>Applying a comprehensive and holistic approach to human well-being through the science of wellness.</p>
+        <a class="dv-pill" href="private-label.html">
+          <span class="dv-pill__tag">Partners</span>
+          Private-label development now open
+          <span aria-hidden="true">→</span>
+        </a>
+        <h1>Holistic care.<br /><span class="dv-grad">Healthier life.</span></h1>
+        <p>Medical nutrition and natural wellness solutions — available as our own brands, under your label, or supplied to hospitals and institutions.</p>
+        <div class="dv-hero__actions">
+          <a class="dv-btn dv-btn--primary" href="products.html">Explore products <span aria-hidden="true">→</span></a>
+          <a class="dv-btn dv-btn--ghost" href="contact.html">Talk to our team</a>
+        </div>
         <ul class="dv-hero__badges" aria-label="Divisiri highlights">
           <li>Own brands</li>
           <li>Private label</li>
           <li>Hospital &amp; institutional supply</li>
         </ul>
-        <div class="dv-hero__actions">
-          <a class="dv-btn dv-btn--primary" href="products.html">Explore Our Products</a>
-          <a class="dv-btn dv-btn--ghost" href="institutional.html">Institutional Enquiries</a>
-        </div>
       </div>
-      <div class="dv-hero__visual" aria-label="Divisiri at a glance">
-        <div class="dv-hero__panel">
-          <div class="dv-hero__stats">
-            <div><strong>9</strong><span>Products</span></div>
-            <div><strong>2</strong><span>Categories</span></div>
-            <div><strong>4</strong><span>Ways to partner</span></div>
+
+      <div class="dv-window" aria-label="Divisiri at a glance">
+        <div class="dv-window__bar" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <em>divisiri / portfolio</em>
+        </div>
+        <div class="dv-window__body">
+          <aside class="dv-window__side" aria-hidden="true">
+            <b>Workspace</b>
+            <i class="is-active">Overview</i>
+            <i>Medical Nutrition</i>
+            <i>Nutri Cosmetics</i>
+            <i>Private label</i>
+            <i>Institutional</i>
+          </aside>
+          <div class="dv-window__main">
+            <div class="dv-hero__stats">
+              <div><span>Products</span><strong>9</strong></div>
+              <div><span>Categories</span><strong>2</strong></div>
+              <div><span>Ways to partner</span><strong>4</strong></div>
+            </div>
+            <ul class="dv-hero__rows">
+              <li><a href="solutions.html">Medical Nutrition</a><em>Targeted nutrition</em><span aria-hidden="true">→</span></li>
+              <li><a href="products.html">Ayur / Nutri Cosmetics</a><em>Beauty from within</em><span aria-hidden="true">→</span></li>
+              <li><a href="private-label.html">Private label</a><em>Idea → delivery</em><span aria-hidden="true">→</span></li>
+              <li><a href="institutional.html">Institutional supply</a><em>Hospitals &amp; institutions</em><span aria-hidden="true">→</span></li>
+            </ul>
           </div>
-          <ul class="dv-hero__rows">
-            <li><a href="solutions.html">Medical Nutrition</a><span aria-hidden="true">→</span></li>
-            <li><a href="products.html">Ayur / Nutri Cosmetics</a><span aria-hidden="true">→</span></li>
-            <li><a href="private-label.html">Private label</a><span aria-hidden="true">→</span></li>
-            <li><a href="institutional.html">Institutional supply</a><span aria-hidden="true">→</span></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -144,7 +165,16 @@
         <p class="dv-lede">Thoughtfully developed solutions for everyday wellness and specialised nutritional needs.</p>
       </div>
       <div class="dv-filters" role="group" aria-label="Filter products by category" id="product-filters"></div>
-      <div class="dv-products" id="home-products" aria-live="polite"></div>
+    </div>
+    <div class="dv-marquee" id="product-marquee">
+      <div class="dv-marquee__viewport" id="product-viewport" role="region" aria-label="Products — scroll sideways to browse" tabindex="0">
+        <div class="dv-products dv-products--strip" id="home-products" aria-live="polite"></div>
+      </div>
+      <div class="dv-wrap dv-marquee__controls">
+        <button class="dv-marquee__toggle" id="product-toggle" type="button" aria-pressed="false">
+          <span class="dv-marquee__icon" aria-hidden="true"></span><span class="dv-marquee__label">Pause</span>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -301,7 +331,7 @@
         <p>Medical nutrition, natural wellness and healthcare solutions, developed with a holistic approach to human well-being.</p>
       </div>
       <div>
-        <h4>Products</h4>
+        <h3>Products</h3>
         <ul>
           <li><a href="solutions.html">Medical Nutrition</a></li>
           <li><a href="products.html">Nutri Cosmetics</a></li>
@@ -309,7 +339,7 @@
         </ul>
       </div>
       <div>
-        <h4>Partners</h4>
+        <h3>Partners</h3>
         <ul>
           <li><a href="private-label.html">Private Label</a></li>
           <li><a href="institutional.html">Institutional Supply</a></li>
@@ -317,7 +347,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="about.html">Our Approach</a></li>
@@ -325,7 +355,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms</a></li>
@@ -405,6 +435,151 @@
       return card;
     }
 
+    /* Auto-scrolling strip: native horizontal scroll (swipe/trackpad work as usual)
+       with a slow drift on top. A second, hidden copy of the cards makes the loop seamless. */
+    var viewport = document.getElementById("product-viewport");
+    var toggle = document.getElementById("product-toggle");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var SPEED = 32; // px per second
+    var pos = 0;
+    var loopWidth = 0;
+    var lastTime = 0;
+    var userPaused = reduceMotion.matches;
+    var hovering = false;
+    var focused = false;
+    var interacting = false;
+    var resumeTimer = null;
+
+    function isRunning() {
+      return loopWidth > 0 && !userPaused && !hovering && !focused && !interacting && !document.hidden;
+    }
+
+    function syncToggle() {
+      toggle.hidden = loopWidth === 0;
+      toggle.setAttribute("aria-pressed", userPaused ? "true" : "false");
+      toggle.querySelector(".dv-marquee__label").textContent = userPaused ? "Play" : "Pause";
+      toggle.classList.toggle("is-paused", userPaused);
+    }
+
+    function tick(time) {
+      var dt = lastTime ? Math.min(time - lastTime, 64) : 0;
+      lastTime = time;
+      if (isRunning()) {
+        // Pick up any manual scroll before drifting further
+        if (Math.abs(viewport.scrollLeft - pos) > 2) pos = viewport.scrollLeft;
+        pos += (SPEED * dt) / 1000;
+        if (pos >= loopWidth) pos -= loopWidth;
+        viewport.scrollLeft = pos;
+      }
+      window.requestAnimationFrame(tick);
+    }
+
+    // Keep manual scrolling endless in both directions
+    viewport.addEventListener("scroll", function () {
+      if (!loopWidth) return;
+      if (viewport.scrollLeft >= loopWidth) viewport.scrollLeft -= loopWidth;
+      else if (viewport.scrollLeft <= 0 && interacting) viewport.scrollLeft += loopWidth;
+      // Browsers round scrollLeft, so only resync after a real jump (user scroll or wrap)
+      if (Math.abs(viewport.scrollLeft - pos) > 2) pos = viewport.scrollLeft;
+    }, { passive: true });
+
+    function holdThenResume(delay) {
+      interacting = true;
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(function () {
+        interacting = false;
+      }, delay);
+    }
+
+    viewport.addEventListener("pointerenter", function (e) {
+      if (e.pointerType === "mouse") hovering = true;
+    });
+    viewport.addEventListener("pointerleave", function (e) {
+      if (e.pointerType === "mouse") hovering = false;
+    });
+    viewport.addEventListener("focusin", function () { focused = true; });
+    viewport.addEventListener("focusout", function () { focused = false; });
+    viewport.addEventListener("touchstart", function () { holdThenResume(1e9); }, { passive: true });
+    viewport.addEventListener("touchend", function () { holdThenResume(2500); }, { passive: true });
+    viewport.addEventListener("wheel", function () { holdThenResume(2500); }, { passive: true });
+
+    // Mouse drag to scroll; a drag does not count as a click on a card link
+    var dragStartX = 0;
+    var dragStartScroll = 0;
+    var dragging = false;
+    var dragged = false;
+    viewport.addEventListener("pointerdown", function (e) {
+      if (e.pointerType !== "mouse" || e.button !== 0) return;
+      dragging = true;
+      dragged = false;
+      dragStartX = e.clientX;
+      dragStartScroll = viewport.scrollLeft;
+    });
+    window.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var dx = e.clientX - dragStartX;
+      if (Math.abs(dx) > 5) {
+        dragged = true;
+        viewport.classList.add("is-dragging");
+      }
+      if (dragged) viewport.scrollLeft = dragStartScroll - dx;
+    });
+    window.addEventListener("pointerup", function () {
+      dragging = false;
+      viewport.classList.remove("is-dragging");
+    });
+    viewport.addEventListener("click", function (e) {
+      if (dragged) {
+        e.preventDefault();
+        dragged = false;
+      }
+    }, true);
+    viewport.addEventListener("dragstart", function (e) { e.preventDefault(); });
+
+    toggle.addEventListener("click", function () {
+      userPaused = !userPaused;
+      syncToggle();
+    });
+
+    reduceMotion.addEventListener("change", function () {
+      userPaused = reduceMotion.matches;
+      syncToggle();
+    });
+
+    function setupLoop() {
+      var cards = grid.querySelectorAll(".dv-product");
+      loopWidth = 0;
+      viewport.classList.remove("is-looping");
+      if (!cards.length) return syncToggle();
+      var first = cards[0];
+      var last = cards[cards.length - 1];
+      var setWidth = last.offsetLeft + last.offsetWidth - first.offsetLeft;
+      // Only loop when the cards don't already fit on screen
+      if (setWidth > viewport.clientWidth) {
+        Array.prototype.forEach.call(cards, function (card) {
+          var clone = card.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          clone.setAttribute("inert", "");
+          clone.querySelectorAll("a").forEach(function (a) { a.tabIndex = -1; });
+          grid.appendChild(clone);
+        });
+        loopWidth = grid.querySelectorAll(".dv-product")[cards.length].offsetLeft - first.offsetLeft;
+        viewport.classList.add("is-looping");
+      }
+      pos = 0;
+      viewport.scrollLeft = 0;
+      syncToggle();
+    }
+
+    var resizeTimer = null;
+    var lastWidth = window.innerWidth;
+    window.addEventListener("resize", function () {
+      if (window.innerWidth === lastWidth) return;
+      lastWidth = window.innerWidth;
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(render, 200);
+    });
+
     function render() {
       grid.classList.add("is-updating");
       window.setTimeout(function () {
@@ -422,9 +597,12 @@
             grid.appendChild(makeCard(product));
           });
         }
+        setupLoop();
         grid.classList.remove("is-updating");
       }, 150);
     }
+
+    window.requestAnimationFrame(tick);
 
     categories.forEach(function (name) {
       var btn = document.createElement("button");

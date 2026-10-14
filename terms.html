@@ -20,6 +20,7 @@
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/divisiri-system.css" />
+<link rel="stylesheet" href="css/saas.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -126,8 +127,8 @@
     DIVISIRI_FOOTER_GROUPS.forEach(function (group, index) {
       var col = document.getElementById("footer-col-" + index);
       if (!col) return;
-      var h4 = document.createElement("h4");
-      h4.textContent = group.heading;
+      var heading = document.createElement("h3");
+      heading.textContent = group.heading;
       var ul = document.createElement("ul");
       group.links.forEach(function (link) {
         var li = document.createElement("li");
@@ -137,7 +138,7 @@
         li.appendChild(a);
         ul.appendChild(li);
       });
-      col.appendChild(h4);
+      col.appendChild(heading);
       col.appendChild(ul);
     });
   })();
