@@ -103,12 +103,12 @@ const DIVISIRI_FAQS = [
   {
     question: "Are Divisiri products made with natural ingredients?",
     answer:
-      "Our Ayur / Nutri Cosmetics are formulated with 100% natural ingredients. Ingredient lists and product details are shown on each product page.",
+      "Our Ayur / Nutri Cosmetics are formulated with natural ingredients. Ingredient lists and product details are shown on each product page.",
   },
   {
     question: "Are Divisiri products certified?",
     answer:
-      "Our cosmetic products are certified cosmetics. Certificates and supporting documentation are available on request.",
+      "Certification details for our cosmetic products will be published once verified. Please contact us for current documentation.",
   },
   {
     question: "Can I buy Divisiri products directly?",
@@ -303,25 +303,25 @@ const DIVISIRI_PRODUCTS = [
     id: "hair-care",
     name: "Hair Care",
     category: "Ayur / Nutri Cosmetics",
-    overview: "Certified cosmetic formulations for hair, made with 100% natural ingredients.",
+    overview: "Cosmetic formulations for hair, made with natural ingredients.",
     intendedUse: "Daily hair care.",
-    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+    keyFeatures: ["natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
     id: "skin-care",
     name: "Skin Care",
     category: "Ayur / Nutri Cosmetics",
-    overview: "Certified cosmetic formulations for skin, made with 100% natural ingredients.",
+    overview: "Cosmetic formulations for skin, made with natural ingredients.",
     intendedUse: "Daily skin care.",
-    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+    keyFeatures: ["natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
     id: "nail-care",
     name: "Nail Care",
     category: "Ayur / Nutri Cosmetics",
-    overview: "Certified cosmetic formulations for nails, made with 100% natural ingredients.",
+    overview: "Cosmetic formulations for nails, made with natural ingredients.",
     intendedUse: "Daily nail care.",
-    keyFeatures: ["100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+    keyFeatures: ["natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
   {
     id: "edible-cosmetics",
@@ -329,7 +329,7 @@ const DIVISIRI_PRODUCTS = [
     category: "Ayur / Nutri Cosmetics",
     overview: "Edible cosmetic products that bring beauty care from the inside out, made with natural ingredients.",
     intendedUse: "Consumed as directed on the product label.",
-    keyFeatures: ["Edible format", "100% natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
+    keyFeatures: ["Edible format", "natural ingredients", DIVISIRI_PRODUCT_DETAIL_PLACEHOLDER],
   },
 ];
 

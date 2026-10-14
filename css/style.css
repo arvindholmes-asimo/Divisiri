@@ -1105,6 +1105,167 @@ details.product-detail summary {
   text-align: center;
 }
 
+/* Visual polish */
+main section > .container > h2 {
+  position: relative;
+  padding-top: 14px;
+}
+
+main section > .container > h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--orange));
+}
+
+.page-hero {
+  background:
+    radial-gradient(circle at 92% 20%, rgba(20, 89, 184, 0.14), transparent 45%),
+    radial-gradient(circle at 8% 100%, rgba(233, 130, 8, 0.1), transparent 40%),
+    var(--bg-soft-blue);
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.page-hero h1 {
+  letter-spacing: -0.02em;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--orange));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(20, 89, 184, 0.14);
+  border-color: rgba(20, 89, 184, 0.35);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.card svg {
+  padding: 8px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  background: var(--bg-soft-blue);
+}
+
+.card a {
+  font-weight: 600;
+}
+
+.btn {
+  letter-spacing: 0.01em;
+}
+
+.btn-primary {
+  box-shadow: 0 8px 20px rgba(20, 89, 184, 0.22);
+}
+
+.btn-orange {
+  box-shadow: 0 8px 20px rgba(233, 130, 8, 0.28);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.hero-icon-panel {
+  background: linear-gradient(160deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.site-header {
+  box-shadow: 0 8px 24px -16px rgba(20, 89, 184, 0.25);
+}
+
+.main-nav a {
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.main-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.process-step {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(20, 89, 184, 0.12);
+}
+
+.site-footer {
+  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-soft-blue) 100%);
+}
+
+.footer-col a {
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.people-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.people-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(20, 89, 184, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card::after,
+  .btn,
+  .main-nav a::after,
+  .process-step,
+  .people-card {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
 /* SaaS-style homepage components */
 .eyebrow {
   margin: 0 0 8px;
